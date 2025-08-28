@@ -87,8 +87,7 @@ public class User implements Serializable {
     private int roleId;
     private String phone;
     private Date createdDate;
-    public User(int id, String email, String userName, String fullName, String passWord, int roleId, String avatar, String phone, Date createdDate) {
-        this.id = id;
+    public User(String email, String userName, String fullName, String passWord, int roleId, String avatar, String phone, Date createdDate) {
         this.email = email;
         this.userName = userName;
         this.fullName = fullName;
