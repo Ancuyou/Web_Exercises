@@ -31,6 +31,11 @@
         </label>
     </section>
     <section>
+        <label>
+            <input type="checkbox" name="remember"> Ghi nhớ đăng nhập
+        </label>
+    </section>
+    <section>
         <button type="submit" class="btn btn-primary">Đăng nhập</button>
     </section>
 </form>

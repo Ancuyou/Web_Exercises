@@ -18,13 +18,13 @@ public class WaitingController extends HttpServlet {
         HttpSession session= req.getSession();
         if(session != null && session.getAttribute("account") != null) {
             User u = (User) session.getAttribute("account");
-            req.setAttribute("username", u.getUserName());
-            if(u.getRoleId() == 1) {
-                resp.sendRedirect(req.getContextPath() + "/admin/home");
-            } else if(u.getRoleId() == 2) {
-                resp.sendRedirect(req.getContextPath() + "/manager/home");
+            int role = u.getRoleId();
+            if(role == 1) {
+                resp.sendRedirect(req.getContextPath() + "/view/admin/home.jsp");
+            } else if(role == 2) {
+                resp.sendRedirect(req.getContextPath() + "/view/manager/home.jsp");
             } else {
-                resp.sendRedirect(req.getContextPath() + "/home");
+                resp.sendRedirect(req.getContextPath() + "/view/home.jsp");
             }
         } else {
             resp.sendRedirect(req.getContextPath() + "/login");

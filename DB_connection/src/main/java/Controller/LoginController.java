@@ -25,10 +25,20 @@ public class LoginController extends HttpServlet {
         if (cookies != null) {
             for (Cookie cookie : cookies) {
                 if (cookie.getName().equals("username")) {
-                    session = req.getSession(true);
-                    session.setAttribute("username", cookie.getValue());
-                    resp.sendRedirect(req.getContextPath() + "/waiting");
-                    return;
+                    UserService service = new UserServiceImpl();
+                    User user = service.findByUserName(cookie.getValue());
+                    System.out.println("Cookie value: " + cookie.getValue());
+                    System.out.println("Cookie value: " + user.getUserName());
+                    if (user != null) {
+                        session = req.getSession(true);
+                        session.setAttribute("account", user);
+                        resp.sendRedirect(req.getContextPath() + "/waiting");
+                        return;
+                    }
+//                    session = req.getSession(true);
+//                    session.setAttribute("username", cookie.getValue());
+//                    resp.sendRedirect(req.getContextPath() + "/waiting");
+//                    return;
                 }
             }
         }
@@ -51,7 +61,7 @@ public class LoginController extends HttpServlet {
         if(username.isEmpty() || password.isEmpty()){
             alertMsg = "Tài khoản hoặc mật khẩu không được rỗng";
             req.setAttribute("alert", alertMsg);
-            req.getRequestDispatcher("/views/login.jsp").forward(req, resp);
+            req.getRequestDispatcher("/view/login.jsp").forward(req, resp);
             return;
         }
         UserService service = new UserServiceImpl();
@@ -67,7 +77,7 @@ public class LoginController extends HttpServlet {
         }else{
             alertMsg = "Tài khoản hoặc mật khẩu không đúng";
             req.setAttribute("alert", alertMsg);
-            req.getRequestDispatcher("/views/login.jsp").forward(req, resp);
+            req.getRequestDispatcher("/view/login.jsp").forward(req, resp);
         }
     }
     private void saveRemeberMe(HttpServletResponse response, String
