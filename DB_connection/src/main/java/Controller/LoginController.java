@@ -32,7 +32,7 @@ public class LoginController extends HttpServlet {
                 }
             }
         }
-        req.getRequestDispatcher("views/login.jsp").forward(req, resp);
+        req.getRequestDispatcher("view/login.jsp").forward(req, resp);
     }
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
