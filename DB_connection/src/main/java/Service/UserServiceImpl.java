@@ -43,5 +43,14 @@ public class UserServiceImpl implements UserService {
     public void insert(User user) {
         userDao.insert(user);
     }
+    @Override
+    public User findByEmailOrPhone(String identifier) {
+        return userDao.findByEmailOrPhone(identifier);
+    }
+    @Override
+    public void updatePassword(int userId, String newPassword) {
+        // Bạn nên mã hóa mật khẩu ở đây trước khi lưu (VD: BCrypt)
+        userDao.updatePassword(userId, newPassword);
+    }
 
 }

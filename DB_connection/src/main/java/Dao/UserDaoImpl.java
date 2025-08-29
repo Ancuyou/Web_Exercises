@@ -107,4 +107,58 @@ public class UserDaoImpl implements UserDao {
         } catch (Exception ex) {}
         return duplicate;
     }
+    @Override
+    public User findByEmailOrPhone(String identifier) {
+        String sql = "SELECT * FROM [User] WHERE email = ? OR phone = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, identifier);
+            ps.setString(2, identifier);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                User user = new User();
+                user.setId(rs.getInt("id"));
+                user.setEmail(rs.getString("email"));
+                user.setUserName(rs.getString("username"));
+                user.setFullName(rs.getString("fullname"));
+                user.setPassWord(rs.getString("password"));
+                user.setAvatar(rs.getString("avatar"));
+                user.setRoleId(rs.getInt("roleid"));
+                user.setPhone(rs.getString("phone"));
+                user.setCreatedDate(rs.getDate("createdDate"));
+                return user;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (rs != null) rs.close();
+                if (ps != null) ps.close();
+                if (conn != null) conn.close();
+            } catch (Exception ex) { ex.printStackTrace(); }
+        }
+        return null;
+    }
+
+    @Override
+    public void updatePassword(int userId, String newPassword) {
+        String sql = "UPDATE [User] SET password = ? WHERE id = ?";
+        try {
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, newPassword);
+            ps.setInt(2, userId);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (ps != null) ps.close();
+                if (conn != null) conn.close();
+            } catch (Exception ex) { ex.printStackTrace(); }
+        }
+    }
+
+
 }
