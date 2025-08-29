@@ -7,6 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ page import="Models.User" %>
+<%
+    User u = (User) session.getAttribute("account");
+    if (u == null) {
+        response.sendRedirect(request.getContextPath() + "/login");
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -25,7 +33,7 @@
     <div class="container">
         <a class="navbar-brand fw-bold text-primary" href="#"><i class="fa-solid fa-briefcase me-2"></i>Manager</a>
         <div class="ms-auto">
-            <span class="me-3 text-secondary">Xin chào, <strong>${sessionScope.account.fullName}</strong></span>
+            <span class="me-3 text-secondary">Xin chào, <strong><%= u.getFullName() %></strong></span>
             <a class="btn btn-outline-danger btn-sm" href="<c:url value='/logout'/>">
                 <i class="fa-solid fa-right-from-bracket me-1"></i> Đăng xuất
             </a>

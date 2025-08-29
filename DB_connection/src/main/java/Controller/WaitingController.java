@@ -1,5 +1,6 @@
 package Controller;
 import Models.User;
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -21,6 +22,8 @@ public class WaitingController extends HttpServlet {
             int role = u.getRoleId();
             if(role == 1) {
                 resp.sendRedirect(req.getContextPath() + "/view/admin/home.jsp");
+//                RequestDispatcher dispatcher = req.getRequestDispatcher("/view/admin/home.jsp");
+//                dispatcher.forward(req, resp);
             } else if(role == 2) {
                 resp.sendRedirect(req.getContextPath() + "/view/manager/home.jsp");
             } else {

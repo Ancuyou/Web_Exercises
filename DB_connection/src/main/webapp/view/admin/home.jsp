@@ -7,6 +7,14 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ page import="Models.User" %>
+<%
+    User u = (User) session.getAttribute("account");
+    if (u == null) {
+        response.sendRedirect(request.getContextPath() + "/login");
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -33,7 +41,7 @@
         <a class="navbar-brand fw-bold text-primary" href="#"><i class="fa-solid fa-gauge-high me-2"></i>Admin</a>
         <div class="d-flex align-items-center">
             <span class="me-3 text-secondary">
-                Xin chào, <strong>${sessionScope.account.fullName}</strong>
+                Xin chào, <strong><%= u.getFullName() %></strong>
             </span>
             <a class="btn btn-outline-danger btn-sm" href="<c:url value='/logout'/>">
                 <i class="fa-solid fa-right-from-bracket me-1"></i> Đăng xuất
@@ -48,7 +56,7 @@
         <div class="d-flex align-items-center gap-3">
             <i class="fa-solid fa-user-shield fa-2x"></i>
             <div>
-                <div class="fw-semibold">${sessionScope.account.fullName}</div>
+                <div class="fw-semibold"><%= u.getFullName() %></div>
                 <small class="text-light">Quyền: Admin</small>
             </div>
         </div>
