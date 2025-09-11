@@ -21,11 +21,11 @@ public class HomeController extends HttpServlet {
             UserDTO u = (UserDTO) session.getAttribute("account");
             int role = u.getRoleId();
             if(role == 1) {
-                resp.sendRedirect(req.getContextPath() + "/views/admin/home.jsp");
+                resp.sendRedirect(req.getContextPath() + "/admin/home");
             } else if(role == 2) {
-                resp.sendRedirect(req.getContextPath() + "/views/manager/home.jsp");
+                resp.sendRedirect(req.getContextPath() + "/manager/home");
             } else {
-                resp.sendRedirect(req.getContextPath() + "/views/user/home.jsp");
+                resp.sendRedirect(req.getContextPath() + "/user/home");
             }
         } else {
             resp.sendRedirect(req.getContextPath() + "/login");

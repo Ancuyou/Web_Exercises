@@ -10,29 +10,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47361e4d-2cd4-4639-92d4-37a8ac1c3751" name="Changes" comment="9th commmit - Login - CRUD - Category">
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/CategoryController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/HomeController2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/decorators/admin.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/decorators/web.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/commons/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/categories2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/home2.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/web/home2.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/AuthFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/dao/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/dao/CategoryDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/entities/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/models/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/models/CategoryDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/utils/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/utils/CategoryMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/sitemesh3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/sitemesh3.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/commons/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/commons/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/list-category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/list-category.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/manager/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/manager/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/user/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/user/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/configs/JPAConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/CategoryController2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/HomeController2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/ImageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/LoginController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/controllers/LogoutController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/dao/CategoryDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/dao/CategoryDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/dao/UserDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/entities/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/entities/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/models/CategoryDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/models/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/services/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/services/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/services/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/services/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/utils/CategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/utils/Constant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/java/vn/iotstar/utils/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/resources/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/WEB-INF/decorators/admin.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/WEB-INF/decorators/web.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/WEB-INF/sitemesh3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/commons/footer.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/commons/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/add-category.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/admin/categories.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/admin/categories2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/admin/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/admin/home2.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/edit-category.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/list-category.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/manager/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/user/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BT05/untitled/src/main/webapp/views/web/home2.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +242,7 @@
       <workItem from="1757037884034" duration="7214000" />
       <workItem from="1757324968292" duration="1546000" />
       <workItem from="1757398850558" duration="29995000" />
-      <workItem from="1757556924898" duration="11651000" />
+      <workItem from="1757556924898" duration="12518000" />
     </task>
     <task id="LOCAL-00001" summary="8th commmit - CRUD categories theo JPA">
       <option name="closed" value="true" />

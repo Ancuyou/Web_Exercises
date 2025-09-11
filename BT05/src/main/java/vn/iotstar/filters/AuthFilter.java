@@ -1,4 +1,4 @@
-package vn.iotstar.controllers;
+package vn.iotstar.filters;
 
 import jakarta.servlet.*;
 import jakarta.servlet.annotation.WebFilter;

@@ -1,0 +1,62 @@
+/* Header cố định trên cùng */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+/* Sidebar cố định bên trái */
+.sidebar {
+    position: fixed;
+    top: 56px; /* chiều cao header (Bootstrap mặc định ~56px) */
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    background: linear-gradient(180deg, #0d6efd, #0a58ca);
+    color: white;
+    padding: 1rem;
+    overflow-y: auto; /* cuộn riêng nếu menu dài */
+}
+
+/* Nội dung chính phải chừa khoảng trống sidebar + header */
+.content {
+    margin-top: 56px;   /* chừa header */
+    margin-left: 260px; /* chừa sidebar */
+    padding: 1rem;
+    background: #f5f7fb;
+}
+
+/* Footer cố định dưới cùng */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 260px; /* chừa sidebar */
+    right: 0;
+    height: 50px;
+    background: linear-gradient(90deg,#0d6efd,#6610f2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Sidebar links */
+.sidebar a {
+    color: #ffffff; /* trắng rõ ràng */
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+/* Khi hover hoặc active */
+.sidebar a:hover, .sidebar a.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: translateX(4px);
+}
+
