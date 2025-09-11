@@ -10,7 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47361e4d-2cd4-4639-92d4-37a8ac1c3751" name="Changes" comment="9th commmit - Login - CRUD - Category">
-      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/sitemesh3.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/sitemesh3.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/CategoryController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/HomeController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/decorators/admin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/decorators/web.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/commons/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/categories2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/home2.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/web/home2.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/AuthFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/AuthFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/controllers/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/dao/CategoryDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/dao/CategoryDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/entities/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/entities/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/models/CategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/models/CategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/utils/CategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/java/vn/iotstar/utils/CategoryMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/sitemesh3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/WEB-INF/sitemesh3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/commons/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/commons/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/admin/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/list-category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/list-category.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/manager/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/manager/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/main/webapp/views/user/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/main/webapp/views/user/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,27 +82,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Tomcat Server.Tomcat 10.1.44.executor": "Run",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "G:/BT02/BT04",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Tomcat Server.Tomcat 10.1.44.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/BT02/BT04&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="vn.iotstar.controllers" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.44" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.44" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -187,7 +214,8 @@
       <updated>1757037882737</updated>
       <workItem from="1757037884034" duration="7214000" />
       <workItem from="1757324968292" duration="1546000" />
-      <workItem from="1757398850558" duration="27777000" />
+      <workItem from="1757398850558" duration="29995000" />
+      <workItem from="1757556924898" duration="11651000" />
     </task>
     <task id="LOCAL-00001" summary="8th commmit - CRUD categories theo JPA">
       <option name="closed" value="true" />

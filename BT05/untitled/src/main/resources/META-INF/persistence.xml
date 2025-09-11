@@ -1,0 +1,45 @@
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+                                 https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="dataSource" transaction-type="RESOURCE_LOCAL">
+
+        <!-- Khai báo entity -->
+        <class>vn.iotstar.entities.Category</class>
+        <class>vn.iotstar.entities.User</class>
+
+        <properties>
+            <!-- Kết nối SQL Server -->
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:sqlserver://DESKTOP-331CJKC:1433;databaseName=LTWEB_ST5_ST6;encrypt=false;trustServerCertificate=true" />
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+            <property name="jakarta.persistence.jdbc.user" value="sa" />
+            <property name="jakarta.persistence.jdbc.password" value="123" />
+
+            <!-- Cấu hình Hibernate -->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.SQLServer2012Dialect" />
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+
+            <!-- Chế độ tự động cập nhật schema -->
+            <property name="hibernate.hbm2ddl.auto" value="update" />
+        </properties>
+    </persistence-unit>
+<!--    <persistence-unit name="DbMySQL">-->
+<!--        <class>vn.iotstar.entities.User</class>-->
+<!--        <class>vn.iotstar.entities.Category</class>-->
+<!--        <properties>-->
+<!--            <property name="jakarta.persistence.jdbc.url" value = "jdbc:mysql://localhost:3306/servletjpa"/>-->
+<!--            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />-->
+<!--            <property name="jakarta.persistence.jdbc.user" value="root" />-->
+<!--            <property name="jakarta.persistence.jdbc.password" value="root" />-->
+
+<!--            &lt;!&ndash; Hibernate options &ndash;&gt;-->
+<!--            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />-->
+<!--            <property name="hibernate.hbm2ddl.auto" value="update" />-->
+<!--            <property name="hibernate.show_sql" value="true" />-->
+<!--        </properties>-->
+<!--    </persistence-unit>-->
+</persistence>
