@@ -1,7 +1,7 @@
 package Dao;
 
 import Models.User;
-import Service.DBContext;
+import Config.DBContext;
 
 import java.sql.Connection;
 import java.sql.Date;

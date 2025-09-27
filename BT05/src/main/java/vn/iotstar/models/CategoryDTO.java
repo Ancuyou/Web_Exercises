@@ -4,7 +4,6 @@ public class CategoryDTO {
     private int id;
     private String categoryName;
     private String images;
-
     // Thông tin user sở hữu category
     private int userId;
 

@@ -30,5 +30,4 @@ public class ForgetPasswordController extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/resetPassword");
         }
     }
-
 }

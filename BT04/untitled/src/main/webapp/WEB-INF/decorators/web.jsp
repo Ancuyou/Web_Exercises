@@ -10,12 +10,12 @@
 <html>
 
 <head>
-    <title>Insert title here</title>
+    <div><%@ include file="/commons/header.jsp"%></div>
 </head>
 <body>
-<div><%@ include file="/commons/header.jsp"%></div>
-<div><sitemesh:write property="body"/></div>
-<div><%@ include file="/commons/footer.jsp"%></div>
-
+    <div><sitemesh:write property="body"/></div>
 </body>
+<footer>
+    <div><%@ include file="/commons/footer.jsp"%></div>
+</footer>
 </html>

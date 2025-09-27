@@ -39,6 +39,9 @@
         <a href="<c:url value='/forgetPassword'/>">Quên mật khẩu?</a>
     </section>
     <section>
+        <a href="<c:url value='/register'/>">Chua co tai khoan? Dang ky </a>
+    </section>
+    <section>
         <button type="submit" class="btn btn-primary">Đăng nhập</button>
     </section>
 </form>
